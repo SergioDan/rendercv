@@ -14,103 +14,99 @@ cv:
       username: SergioDan
 
   sections:
-    - type: profile
-      content: >-
+    profile:
+      - >-
         Senior Mobile Software Engineer with 9+ years of experience designing, architecting, and delivering
         enterprise-grade Android applications. Specialized in Kotlin and Jetpack Compose, with strong expertise
         in Clean Architecture, offline-first systems, and reliability-focused mobile design. Proven ownership of
         complex production systems, collaborating closely with product, QA, and cross-functional teams.
 
-    - type: core_skills
-      entries:
-        - label: Mobile & Languages
-          details: Kotlin, Java, Android SDK, Jetpack Compose, Flutter, React Native
-        - label: Architecture
-          details: Clean Architecture, MVVM, Modular Architecture, Offline-First Systems, Data Persistence
-        - label: Security & Integrations
-          details: Secure Authentication (JWT), Secure Storage, REST APIs, SDK Integration, Bluetooth Low Energy (BLE)
-        - label: Reliability & Delivery
-          details: Performance Optimization, ANR Reduction, CI/CD Pipelines, Automated Testing, Production Debugging, Monitoring & Observability
+    core_skills:
+      - label: Mobile & Languages
+        details: Kotlin, Java, Android SDK, Jetpack Compose, Flutter, React Native
+      - label: Architecture
+        details: Clean Architecture, MVVM, Modular Architecture, Offline-First Systems, Data Persistence
+      - label: Security & Integrations
+        details: Secure Authentication (JWT), Secure Storage, REST APIs, SDK Integration, Bluetooth Low Energy (BLE)
+      - label: Reliability & Delivery
+        details: Performance Optimization, ANR Reduction, CI/CD Pipelines, Automated Testing, Production Debugging, Monitoring & Observability
 
-    - type: experience
-      entries:
-        - company: LogicMark
-          position: Senior Software Engineer (Android)
-          start_date: 2024
-          end_date: present
-          location: Remote / US
-          highlights:
-            - Develop and maintain Android applications interacting with Bluetooth-enabled medical and safety devices, prioritizing reliability and real-time data exchange
-            - Reduced production ANRs by ~30% through performance analysis, threading improvements, and proactive monitoring
-            - Own features end-to-end in production, including debugging hardware communication issues and resolving live environment incidents
-            - Designed secure JWT-based authentication flows and improved API reliability using retry strategies and offline caching
-            - Contributed to architectural standardization, improving maintainability and accelerating onboarding of new engineers
+    experience:
+      - company: LogicMark
+        position: Senior Software Engineer (Android)
+        start_date: 2024
+        end_date: present
+        location: Remote / US
+        highlights:
+          - Develop and maintain Android applications interacting with Bluetooth-enabled medical and safety devices, prioritizing reliability and real-time data exchange
+          - Reduced production ANRs by ~30% through performance analysis, threading improvements, and proactive monitoring
+          - Own features end-to-end in production, including debugging hardware communication issues and resolving live environment incidents
+          - Designed secure JWT-based authentication flows and improved API reliability using retry strategies and offline caching
+          - Contributed to architectural standardization, improving maintainability and accelerating onboarding of new engineers
 
-        - company: ThinkOn Inc.
-          position: Senior Software Engineer (Consulting)
-          start_date: 2023
-          end_date: 2023
-          location: Canada
-          highlights:
-            - Supported enterprise clients through short-term senior engineering engagements focused on mobile platform reliability and system integration
-            - Collaborated with internal and client teams to review architecture, improve stability, and unblock delivery risks
-            - Provided technical guidance on Android best practices, production debugging, and maintainable system design
+      - company: ThinkOn Inc.
+        position: Senior Software Engineer (Consulting)
+        start_date: 2023
+        end_date: 2023
+        location: Canada
+        highlights:
+          - Supported enterprise clients through short-term senior engineering engagements focused on mobile platform reliability and system integration
+          - Collaborated with internal and client teams to review architecture, improve stability, and unblock delivery risks
+          - Provided technical guidance on Android best practices, production debugging, and maintainable system design
 
-        - company: Lululemon
-          position: Software Engineer (Android)
-          start_date: 2022
-          end_date: 2023
-          location: Canada
-          highlights:
-            - Delivered high-scale Android UI features using Jetpack Compose for a large consumer user base
-            - Improved dashboard load times by approximately 1.5 seconds through UI and performance optimizations
-            - Collaborated closely with design and backend teams to deliver polished, production-ready features
-            - Contributed to stability improvements and monitoring in large-scale production environments
+      - company: Lululemon
+        position: Software Engineer (Android)
+        start_date: 2022
+        end_date: 2023
+        location: Canada
+        highlights:
+          - Delivered high-scale Android UI features using Jetpack Compose for a large consumer user base
+          - Improved dashboard load times by approximately 1.5 seconds through UI and performance optimizations
+          - Collaborated closely with design and backend teams to deliver polished, production-ready features
+          - Contributed to stability improvements and monitoring in large-scale production environments
 
-        - company: Agents Only Technologies
-          position: Mobile Engineer
-          start_date: 2021
-          end_date: 2022
-          location: Remote
-          highlights:
-            - Built Flutter-based logistics applications, improving tracking accuracy and reducing synchronization delays
-            - Shipped features in React Native for mobile workflows and UI delivery
-            - Enhanced offline reliability and data consistency for field operations
+      - company: Agents Only Technologies
+        position: Mobile Engineer
+        start_date: 2021
+        end_date: 2022
+        location: Remote
+        highlights:
+          - Built Flutter-based logistics applications, improving tracking accuracy and reducing synchronization delays
+          - Delivered features using React Native for mobile workflows and UI components
+          - Enhanced offline reliability and data consistency for field operations
 
-        - company: HSBC
-          position: Android Developer
-          start_date: 2019
-          end_date: 2020
-          location: Colombia
-          highlights:
-            - Implemented secure onboarding and authentication flows aligned with enterprise banking standards
-            - Improved application stability and security practices across mobile authentication features
+      - company: HSBC
+        position: Android Developer
+        start_date: 2019
+        end_date: 2020
+        location: Colombia
+        highlights:
+          - Implemented secure onboarding and authentication flows aligned with enterprise banking standards
+          - Improved application stability and security practices across mobile authentication features
 
-        - company: Picniic
-          position: Senior Software Engineer (Android)
-          start_date: 2016
-          end_date: 2019
-          location: Canada
-          highlights:
-            - Led Kotlin migration initiatives, significantly reducing crash rates across the Android application
-            - Delivered offline-capable family productivity features with a focus on reliability and performance
+      - company: Picniic
+        position: Senior Software Engineer (Android)
+        start_date: 2016
+        end_date: 2019
+        location: Canada
+        highlights:
+          - Led Kotlin migration initiatives, significantly reducing crash rates across the Android application
+          - Delivered offline-capable family productivity features with a focus on reliability and performance
 
-    - type: selected_projects
-      entries:
-        - name: SafeConnect — Production Android Application (Lead Android Engineer)
-          highlights:
-            - Led end-to-end design and implementation of a production-grade Android application, owning architecture, state management, networking, and backend integrations
-            - Designed reusable and modular components aligned with Clean Architecture and MVVM to support long-term scalability and maintainability
-            - Implemented secure API integrations, background processing, device registration flows, and real-time communication features
-            - Built reliability and observability into the system through structured logging, error handling, and production monitoring
-            - Supported iterative delivery through staged rollouts and controlled releases to enable safe experimentation in production
+    selected_projects:
+      - name: SafeConnect — Production Android Application (Lead Android Engineer)
+        highlights:
+          - Led end-to-end design and implementation of a production-grade Android application, owning architecture, state management, networking, and backend integrations
+          - Designed reusable and modular components aligned with Clean Architecture and MVVM to support long-term scalability and maintainability
+          - Implemented secure API integrations, background processing, device registration flows, and real-time communication features
+          - Built reliability and observability into the system through structured logging, error handling, and production monitoring
+          - Supported iterative delivery through staged rollouts and controlled releases to enable safe experimentation in production
 
-    - type: education
-      entries:
-        - institution: Universidad Católica de Colombia
-          area: Computer Science
-          degree: B.S.
-          location: Colombia
+    education:
+      - institution: Universidad Católica de Colombia
+        area: Computer Science
+        degree: B.S.
+        location: Colombia
 
 design:
   theme: engineeringclassic
