@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "rendercv/examples/**/*.yaml"
+      - "rendercv/examples/**/*.yml"
       - ".github/workflows/**"
 
 jobs:
@@ -23,6 +24,10 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install "rendercv[full]"
+
+      - name: Debug - list examples
+        run: |
+          ls -la rendercv/examples
 
       - name: Render Sergio CV
         run: |
