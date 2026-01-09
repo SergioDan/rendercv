@@ -3,8 +3,8 @@ name: Render CV
 on:
   push:
     paths:
-      - "rendercv/examples/**/*.yaml"
-      - "rendercv/examples/**/*.yml"
+      - "examples/**/*.yaml"
+      - "examples/**/*.yml"
       - ".github/workflows/**"
 
 jobs:
@@ -25,20 +25,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install "rendercv[full]"
 
-      - name: Debug - show where we are and list files
+      - name: Debug - list files
         run: |
-          echo "PWD:"
           pwd
-          echo "ROOT:"
           ls -la
-          echo "rendercv/:"
-          ls -la ./rendercv || true
-          echo "rendercv/examples/:"
-          ls -la ./rendercv/examples || true
+          ls -la examples || true
 
       - name: Render Sergio CV
         run: |
-          rendercv render ./rendercv/examples/sergio_ramirez_cv.yaml
+          rendercv render ./examples/sergio_ramirez_cv.yaml
 
       - name: Upload PDF
         uses: actions/upload-artifact@v4
