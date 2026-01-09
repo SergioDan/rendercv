@@ -25,13 +25,20 @@ jobs:
           python -m pip install --upgrade pip
           pip install "rendercv[full]"
 
-      - name: Debug - list examples
+      - name: Debug - show where we are and list files
         run: |
-          ls -la rendercv/examples
+          echo "PWD:"
+          pwd
+          echo "ROOT:"
+          ls -la
+          echo "rendercv/:"
+          ls -la ./rendercv || true
+          echo "rendercv/examples/:"
+          ls -la ./rendercv/examples || true
 
       - name: Render Sergio CV
         run: |
-          rendercv render rendercv/examples/sergio_ramirez_cv.yaml
+          rendercv render ./rendercv/examples/sergio_ramirez_cv.yaml
 
       - name: Upload PDF
         uses: actions/upload-artifact@v4
