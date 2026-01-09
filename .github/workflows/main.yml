@@ -19,9 +19,10 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install RenderCV
+      - name: Install RenderCV (FULL)
         run: |
-          pip install rendercv
+          python -m pip install --upgrade pip
+          pip install "rendercv[full]"
 
       - name: Render Sergio CV
         run: |
