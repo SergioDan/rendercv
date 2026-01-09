@@ -1,0 +1,34 @@
+name: Render CV
+
+on:
+  push:
+    paths:
+      - "rendercv/examples/**/*.yaml"
+      - ".github/workflows/**"
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install RenderCV
+        run: |
+          pip install rendercv
+
+      - name: Render Sergio CV
+        run: |
+          rendercv render rendercv/examples/sergio_ramirez_cv.yaml
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: sergio-ramirez-cv
+          path: rendercv_output/*.pdf
