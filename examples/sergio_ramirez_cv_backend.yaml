@@ -2,7 +2,7 @@
 
 cv:
   name: Sergio Daniel Ramírez
-  headline: Senior Software Engineer · Mobile (Android) → Platform/Backend · Kotlin · Python · Reliability
+  headline: Senior Software Engineer · Platform, Reliability & Distributed Systems
   location: Vancouver, Canada
   email: danielkrd@gmail.com
   website: https://safeconnect-hnjcd3dq.manus.space
@@ -14,40 +14,40 @@ cv:
       username: SergioDan
 
   sections:
+
     profile:
       - >-
-        Senior Software Engineer with 9+ years of experience building and operating production systems,
-        with a strong track record in reliability, performance, and secure integrations.
-        Deep Android expertise (Kotlin/Jetpack Compose) plus hands-on backend work through product projects
-        (API design, service integration, data modeling) with a platform mindset: observability, failure handling,
-        and scalable architecture.
+        Senior Software Engineer with 9+ years of experience designing, architecting, and delivering
+        production-grade software systems across mobile, backend, and distributed platforms.
+        Specialized in building reliable, secure, and real-time systems that integrate software with
+        physical devices and cloud services. Proven ownership of complex production environments,
+        including system architecture, observability, incident response, and performance optimization.
 
     core_skills:
-      - label: Backend & Platform (hands-on via projects)
-        details: Python, FastAPI, REST APIs, SQLAlchemy, PostgreSQL, Docker, CI/CD, Observability (logging/metrics), Auth (JWT)
-      - label: Cloud & Distributed Systems (working knowledge)
-        details: Redis, gRPC, Kubernetes, NoSQL concepts, Message queues (concepts), Linux
-      - label: Mobile & Languages
-        details: Kotlin, Java, Android SDK, Jetpack Compose, Flutter, React Native
-      - label: Architecture
-        details: Clean Architecture, MVVM, Modular Architecture, Offline-First Systems, Data Persistence, API Integration Patterns
+      - label: Platform & Distributed Systems
+        details: Distributed Systems, Real-Time Data Processing, Event-Driven Architecture, API Design, Background Processing, Observability & Monitoring
+      - label: Backend & Services
+        details: Python, FastAPI, REST APIs, WebSockets, JWT Authentication, Redis, Data Persistence
       - label: Reliability & Delivery
-        details: Performance Optimization, ANR Reduction, CI/CD Pipelines, Automated Testing, Production Debugging, Monitoring & Observability
-      - label: Security & Integrations
-        details: Secure Authentication (JWT), Secure Storage, REST APIs, SDK Integration, Bluetooth Low Energy (BLE)
+        details: Production Debugging, Incident Response, Performance Optimization, CI/CD Pipelines, Automated Testing, Release Management
+      - label: Devices & Integrations
+        details: Bluetooth Low Energy (BLE), Hardware Communication, Secure Device Registration, Data Synchronization
+      - label: Mobile & UI
+        details: Kotlin, Android SDK, Jetpack Compose, Flutter, React Native
 
     experience:
       - company: LogicMark
-        position: Senior Software Engineer (Android)
+        position: Senior Software Engineer
         start_date: 2024
         end_date: present
         location: Remote / US
         highlights:
-          - Built and maintained production Android apps integrating with BLE medical/safety devices, prioritizing reliability and real-time data exchange
-          - Reduced production ANRs by ~30% through performance analysis, threading improvements, and proactive monitoring
-          - Owned features end-to-end in production, including incident response and debugging hardware communication issues
-          - Implemented secure authentication flows and strengthened network resiliency with retry strategies, caching, and failure-aware UX
-          - Contributed to architectural standardization and maintainability improvements to accelerate onboarding and delivery
+          - Built and maintained a real-time software platform connecting cloud services with Bluetooth-enabled medical and safety devices
+          - Designed and improved data pipelines for device communication, ensuring reliable and low-latency transmission
+          - Reduced production ANRs by ~30% through performance analysis, concurrency improvements, and system monitoring
+          - Owned end-to-end production features, including debugging live device communication issues and resolving system incidents
+          - Designed secure JWT-based authentication flows and improved API reliability using retry strategies and offline caching
+          - Improved observability and operational stability through structured logging and proactive monitoring
 
       - company: ThinkOn Inc.
         position: Senior Software Engineer (Consulting)
@@ -55,55 +55,58 @@ cv:
         end_date: 2023
         location: Canada
         highlights:
-          - Supported enterprise clients through senior engineering engagements focused on platform reliability and system integration
-          - Collaborated with client and internal stakeholders to review architecture, improve stability, and reduce delivery risk
-          - Provided technical guidance on production debugging, performance, and maintainable system design
+          - Supported enterprise clients through short-term senior engineering engagements focused on system reliability and platform integration
+          - Reviewed and improved distributed system architecture to reduce delivery risk and improve stability
+          - Provided technical guidance on production debugging, maintainable system design, and software quality
 
       - company: Lululemon
-        position: Software Engineer (Android)
+        position: Software Engineer
         start_date: 2022
         end_date: 2023
         location: Canada
         highlights:
-          - Delivered high-scale Android UI features using Jetpack Compose for a large consumer user base
-          - Improved dashboard load times by ~1.5 seconds via performance profiling and UI optimizations
-          - Partnered with backend and product teams to deliver robust, production-ready features and integrations
-          - Contributed to stability improvements and monitoring practices in large-scale environments
+          - Built and optimized data-driven UI and service integrations used by a large-scale consumer platform
+          - Improved dashboard load times by ~1.5 seconds through performance and data-fetching optimizations
+          - Collaborated with backend teams to design reliable APIs and ensure consistent production behavior
+          - Contributed to system stability and monitoring in high-traffic production environments
 
       - company: Agents Only Technologies
-        position: Mobile Engineer
+        position: Software Engineer
         start_date: 2021
         end_date: 2022
         location: Remote
         highlights:
-          - Built logistics applications using Flutter and React Native, improving tracking accuracy and reducing synchronization delays
-          - Strengthened offline reliability and data consistency for field operations through resilient sync and caching strategies
+          - Built Flutter-based logistics applications backed by real-time data synchronization services
+          - Developed React Native workflows connected to backend APIs for field operations
+          - Improved offline data consistency and synchronization for distributed field devices
 
       - company: HSBC
-        position: Android Developer
+        position: Software Engineer
         start_date: 2019
         end_date: 2020
         location: Colombia
         highlights:
-          - Implemented secure onboarding and authentication flows aligned with enterprise banking standards
-          - Improved stability and security practices across mobile authentication and data access features
+          - Implemented secure onboarding, identity verification, and authentication systems for enterprise banking platforms
+          - Improved reliability and security of mobile-to-backend authentication flows
 
       - company: Picniic
-        position: Senior Software Engineer (Android)
+        position: Senior Software Engineer
         start_date: 2016
         end_date: 2019
         location: Canada
         highlights:
-          - Led Kotlin migration initiatives that reduced crash rates and improved long-term maintainability
-          - Delivered offline-capable productivity features with a focus on reliability and performance
+          - Led major Kotlin migration efforts, significantly reducing crash rates and improving platform stability
+          - Built offline-capable data synchronization features supporting millions of users
+          - Delivered performance-optimized, reliable family productivity services
 
     selected_projects:
-      - name: SafeConnect — Safety Communication App (Android + Backend API)
+      - name: SafeConnect — Distributed Safety Communication Platform (Lead Engineer)
         highlights:
-          - Designed and implemented a production-grade Android app with Clean Architecture, modular components, and reliability-first UX
-          - Built a companion backend API in Python (FastAPI) for core workflows (user, contacts, device registration) and service integrations
-          - Implemented secure auth patterns (JWT), structured logging, and error handling to support observability and safe operation
-          - Delivered iterative releases with controlled changes, focusing on stability, performance, and maintainability
+          - Designed and built a distributed real-time safety platform using FastAPI, WebSockets, and mobile clients
+          - Implemented secure JWT authentication, device registration, and cloud-based contact synchronization
+          - Built backend services for real-time state propagation, alert delivery, and reliability-focused messaging
+          - Integrated mobile clients as nodes in a distributed communication system
+          - Implemented observability, logging, and controlled rollouts to support safe production experimentation
 
     education:
       - institution: Universidad Católica de Colombia
