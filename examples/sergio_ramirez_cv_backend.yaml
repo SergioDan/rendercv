@@ -1,0 +1,118 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.5/schema.json
+
+cv:
+  name: Sergio Daniel Ramírez
+  headline: Senior Software Engineer · Mobile (Android) → Platform/Backend · Kotlin · Python · Reliability
+  location: Vancouver, Canada
+  email: danielkrd@gmail.com
+  website: https://safeconnect-hnjcd3dq.manus.space
+
+  social_networks:
+    - network: LinkedIn
+      username: sergioramirezh
+    - network: GitHub
+      username: SergioDan
+
+  sections:
+    profile:
+      - >-
+        Senior Software Engineer with 9+ years of experience building and operating production systems,
+        with a strong track record in reliability, performance, and secure integrations.
+        Deep Android expertise (Kotlin/Jetpack Compose) plus hands-on backend work through product projects
+        (API design, service integration, data modeling) with a platform mindset: observability, failure handling,
+        and scalable architecture.
+
+    core_skills:
+      - label: Backend & Platform (hands-on via projects)
+        details: Python, FastAPI, REST APIs, SQLAlchemy, PostgreSQL, Docker, CI/CD, Observability (logging/metrics), Auth (JWT)
+      - label: Cloud & Distributed Systems (working knowledge)
+        details: Redis, gRPC, Kubernetes, NoSQL concepts, Message queues (concepts), Linux
+      - label: Mobile & Languages
+        details: Kotlin, Java, Android SDK, Jetpack Compose, Flutter, React Native
+      - label: Architecture
+        details: Clean Architecture, MVVM, Modular Architecture, Offline-First Systems, Data Persistence, API Integration Patterns
+      - label: Reliability & Delivery
+        details: Performance Optimization, ANR Reduction, CI/CD Pipelines, Automated Testing, Production Debugging, Monitoring & Observability
+      - label: Security & Integrations
+        details: Secure Authentication (JWT), Secure Storage, REST APIs, SDK Integration, Bluetooth Low Energy (BLE)
+
+    experience:
+      - company: LogicMark
+        position: Senior Software Engineer (Android)
+        start_date: 2024
+        end_date: present
+        location: Remote / US
+        highlights:
+          - Built and maintained production Android apps integrating with BLE medical/safety devices, prioritizing reliability and real-time data exchange
+          - Reduced production ANRs by ~30% through performance analysis, threading improvements, and proactive monitoring
+          - Owned features end-to-end in production, including incident response and debugging hardware communication issues
+          - Implemented secure authentication flows and strengthened network resiliency with retry strategies, caching, and failure-aware UX
+          - Contributed to architectural standardization and maintainability improvements to accelerate onboarding and delivery
+
+      - company: ThinkOn Inc.
+        position: Senior Software Engineer (Consulting)
+        start_date: 2023
+        end_date: 2023
+        location: Canada
+        highlights:
+          - Supported enterprise clients through senior engineering engagements focused on platform reliability and system integration
+          - Collaborated with client and internal stakeholders to review architecture, improve stability, and reduce delivery risk
+          - Provided technical guidance on production debugging, performance, and maintainable system design
+
+      - company: Lululemon
+        position: Software Engineer (Android)
+        start_date: 2022
+        end_date: 2023
+        location: Canada
+        highlights:
+          - Delivered high-scale Android UI features using Jetpack Compose for a large consumer user base
+          - Improved dashboard load times by ~1.5 seconds via performance profiling and UI optimizations
+          - Partnered with backend and product teams to deliver robust, production-ready features and integrations
+          - Contributed to stability improvements and monitoring practices in large-scale environments
+
+      - company: Agents Only Technologies
+        position: Mobile Engineer
+        start_date: 2021
+        end_date: 2022
+        location: Remote
+        highlights:
+          - Built logistics applications using Flutter and React Native, improving tracking accuracy and reducing synchronization delays
+          - Strengthened offline reliability and data consistency for field operations through resilient sync and caching strategies
+
+      - company: HSBC
+        position: Android Developer
+        start_date: 2019
+        end_date: 2020
+        location: Colombia
+        highlights:
+          - Implemented secure onboarding and authentication flows aligned with enterprise banking standards
+          - Improved stability and security practices across mobile authentication and data access features
+
+      - company: Picniic
+        position: Senior Software Engineer (Android)
+        start_date: 2016
+        end_date: 2019
+        location: Canada
+        highlights:
+          - Led Kotlin migration initiatives that reduced crash rates and improved long-term maintainability
+          - Delivered offline-capable productivity features with a focus on reliability and performance
+
+    selected_projects:
+      - name: SafeConnect — Safety Communication App (Android + Backend API)
+        highlights:
+          - Designed and implemented a production-grade Android app with Clean Architecture, modular components, and reliability-first UX
+          - Built a companion backend API in Python (FastAPI) for core workflows (user, contacts, device registration) and service integrations
+          - Implemented secure auth patterns (JWT), structured logging, and error handling to support observability and safe operation
+          - Delivered iterative releases with controlled changes, focusing on stability, performance, and maintainability
+
+    education:
+      - institution: Universidad Católica de Colombia
+        area: Computer Science
+        degree: B.S.
+        location: Colombia
+
+design:
+  theme: engineeringclassic
+
+locale:
+  language: en
