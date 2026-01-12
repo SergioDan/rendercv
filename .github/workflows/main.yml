@@ -3,40 +3,55 @@ name: Render CV
 on:
   push:
     paths:
-      - "examples/**/*.yaml"
-      - "examples/**/*.yml"
       - ".github/workflows/**"
+      - "**/*.yaml"
+      - "**/*.yml"
 
 jobs:
   render:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      # 1. Checkout del repo público (rendercv fork)
+      - name: Checkout rendercv repo
         uses: actions/checkout@v4
 
+      # 2. Checkout del repo PRIVADO con el CV
+      - name: Checkout private CV repo
+        uses: actions/checkout@v4
+        with:
+          repository: SergioDan/sergio-cv
+          token: ${{ secrets.CV_REPO_TOKEN }}
+          path: cv
+
+      # 3. Instalar Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Install RenderCV (FULL)
+      # 4. Instalar RenderCV completo
+      - name: Install RenderCV
         run: |
           python -m pip install --upgrade pip
           pip install "rendercv[full]"
 
-      - name: Debug - list files
+      # 5. Debug: ver archivos (opcional pero útil)
+      - name: Debug file structure
         run: |
-          pwd
+          echo "Root:"
           ls -la
-          ls -la examples || true
+          echo "CV repo:"
+          ls -la cv
 
-      - name: Render Sergio CV
+      # 6. Renderizar el CV backend
+      - name: Render Sergio Backend CV
         run: |
-          rendercv render ./examples/sergio_ramirez_cv_backend.yaml
+          rendercv render cv/sergio_ramirez_cv_backend.yaml
 
+      # 7. Subir el PDF como Artifact
       - name: Upload PDF
         uses: actions/upload-artifact@v4
         with:
-          name: sergio-ramirez-cv
+          name: sergio-ramirez-backend-cv
           path: rendercv_output/*.pdf
