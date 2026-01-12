@@ -33,7 +33,7 @@ jobs:
 
       - name: Render Sergio CV
         run: |
-          rendercv render ./examples/sergio_ramirez_cv.yaml
+          rendercv render ./examples/sergio_ramirez_cv_backend.yaml
 
       - name: Upload PDF
         uses: actions/upload-artifact@v4
